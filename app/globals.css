@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* สีและขนาดตัวอักษรทั้งเว็บ — แก้ที่นี่ที่เดียว */
+:root {
+  --background: #fbf8ff;
+  --surface: #ffffff;
+  --foreground: #2a2140;
+  --muted: #6b6280;
+  --primary: #6d3fb5;
+  --primary-dark: #4f2a8a;
+  --primary-soft: #efe6fb;
+  --accent: #f4b860;
+  --accent-soft: #fff3df;
+  --border: #e6dcf3;
+  --line-green: #06c755;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-soft: var(--primary-soft);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-border: var(--border);
+  --color-line: var(--line-green);
+
+  --font-sans: var(--font-noto);
+  --font-heading: var(--font-prompt);
+
+  /* ขนาดตัวอักษร (มือถือก่อน แล้วขยายบนจอใหญ่ด้วย clamp) */
+  --text-display: clamp(2rem, 6vw, 3.5rem);
+  --text-display--line-height: 1.25;
+  --text-title: clamp(1.5rem, 4vw, 2.25rem);
+  --text-title--line-height: 1.35;
+  --text-lead: clamp(1.05rem, 2.2vw, 1.25rem);
+  --text-lead--line-height: 1.8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-noto), system-ui, sans-serif;
+  line-height: 1.75;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-prompt), var(--font-noto), sans-serif;
+}

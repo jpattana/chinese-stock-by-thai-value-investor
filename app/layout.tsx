@@ -19,7 +19,7 @@ const description =
   "แบ่งปันผลวิเคราะห์หุ้นจีนแบบ Value Investor ตามแนวคิด Peter Lynch อัปเดตทันทีที่งบออก พร้อมจัดอันดับหุ้นที่น่าสนใจที่สุด";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://chinese-stock-by-thai-value-investor.vercel.app"),
+  metadataBase: new URL("https://chinese-stock-by-thai-value-investo.vercel.app"),
   title,
   description,
   openGraph: {
